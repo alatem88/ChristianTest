@@ -1,0 +1,84 @@
+# config/cucumber.yml
+## YAML Template
+
+################################################################################################################
+#	VARIABLES																						     	   #
+################################################################################################################
+usr: qa.team.linio@linio.com
+pas: test1234
+cod_cupon: 5test
+user_alice01: linio
+pass_alice01: o8A36H9iYPuhaRb
+user_alice02: linio
+pass_alice02: o9Lt2eLJ7qFoJRW
+user_alice03: linio
+pass_alice03: 9zkuLMLjuw4rrfJ
+user_alice04: linio
+pass_alice04: XDwTDZ6biQghciu
+user_alice06: linio
+pass_alice06: UBWtVCAYhbx5v3z
+item: Linio.QA
+#item: Bloc De Dibujo Art Essentials -Melissa & Doug
+####--- selenium / phantom /chromedriver /
+driver: selenium
+
+################################################################################################################
+#ENVIRONMENT		
+# LIVE EXAMPLE: LMX																	   
+################################################################################################################
+LMX: --tag @mx COUNTRY=LMX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-mx.html
+LCO: --tag @co COUNTRY=LCO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-co.html 
+LVE: --tag @ve COUNTRY=LVE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-ve.html 
+LCL: --tag @cl COUNTRY=LCL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-cl.html 
+LPE: --tag @pe COUNTRY=LPE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-pe.html 
+LEC: --tag @ec COUNTRY=LEC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-ec.html 
+LPA: --tag @pa COUNTRY=LPA -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-pa.html 
+################################################################################################################
+#ENVIRONMENT		
+# STAGING's EXAMPLE: A01-MX																   
+################################################################################################################
+A01-MX: --tag @mx COUNTRY=A01_MX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_mx.html 
+A01-CO: --tag @co COUNTRY=A01_CO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_co.html 
+A01-CL: --tag @cl COUNTRY=A01_CL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_cl.html 
+A01-VE: --tag @ve COUNTRY=A01_VE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_ve.html 
+A01-AR: --tag @ar COUNTRY=A01_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_ar.html 
+A01-EC: --tag @ec COUNTRY=A01_EC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_mx.html 
+A01-PA: --tag @pa COUNTRY=A01_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_pa.html 
+A01-PE: --tag @pe COUNTRY=A01_PE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_01_pe.html 
+#cobra
+A02-MX: --tag @mx COUNTRY=A02_MX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_mx.html 
+A02-CO: --tag @co COUNTRY=A02_CO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_co.html 
+A02-CL: --tag @cl COUNTRY=A02_CL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_cl.html 
+A02-VE: --tag @ve COUNTRY=A02_VE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_ve.html 
+A02-AR: --tag @ar COUNTRY=A02_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_ar.html 
+A02-EC: --tag @ec COUNTRY=A02_EC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_mx.html 
+A02-PA: --tag @pa COUNTRY=A02_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_pa.html 
+A02-PE: --tag @pe COUNTRY=A02_PE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_02_pe.html 
+#mobile
+A03-MX: --tag @mx COUNTRY=A03_MX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_mx.html 
+A03-CO: --tag @co COUNTRY=A03_CO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_co.html 
+A03-CL: --tag @cl COUNTRY=A03_CL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_cl.html 
+A03-VE: --tag @ve COUNTRY=A03_VE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_ve.html 
+A03-AR: --tag @ar COUNTRY=A03_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_ar.html 
+A03-EC: --tag @ec COUNTRY=A03_EC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_mx.html 
+A03-PA: --tag @pa COUNTRY=A03_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_pa.html 
+A03-PE: --tag @pe COUNTRY=A03_PE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_03_pe.html 
+#shop-launch
+A04-MX: --tag @mx COUNTRY=A04_MX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_mx.html 
+A04-CO: --tag @co COUNTRY=A04_CO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_co.html 
+A04-CL: --tag @cl COUNTRY=A04_CL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_cl.html 
+A04-VE: --tag @ve COUNTRY=A04_VE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_ve.html 
+A04-AR: --tag @ar COUNTRY=A04_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_ar.html 
+A04-EC: --tag @ec COUNTRY=A04_EC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_mx.html 
+A04-PA: --tag @pa COUNTRY=A04_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_pa.html 
+A04-PE: --tag @pe COUNTRY=A04_PE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_04_pe.html 
+#alice 6
+A06-MX: --tag @mx COUNTRY=A06_MX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_mx.html 
+A06-CO: --tag @co COUNTRY=A06_CO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_co.html 
+A06-CL: --tag @cl COUNTRY=A06_CL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_cl.html 
+A06-VE: --tag @ve COUNTRY=A06_VE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_ve.html 
+A06-AR: --tag @ar COUNTRY=A06_AR -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_ar.html 
+A06-EC: --tag @ec COUNTRY=A06_EC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_mx.html 
+A06-PA: --tag @pa COUNTRY=A06_PA -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_pa.html 
+A06-PE: --tag @pe COUNTRY=A06_PE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-stage_06_pe.html 
+
