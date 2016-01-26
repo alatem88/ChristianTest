@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linio Alice Automated Acceptance Tests
 
 ## Install
@@ -19,3 +20,12 @@
 - Selenium Wendriver =  We see the browser Firefox
 - PhatomJS = We don't see the browser
 - ChromeDriver= We see the browser Chrome
+=======
+# ChristianTest
+Automation QA with Cucumber, Capybara, WebDriver or PhantomJS as Driver.
+
+1. Cucumber
+2. Capybara
+3. Selenium-WebDriver
+4. PhantomJs
+>>>>>>> ea8f03c628f83cd9a638e7bb167dc138b681923c
